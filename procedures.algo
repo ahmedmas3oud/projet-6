@@ -1,4 +1,4 @@
-ALGORITHM algorithm_name
+PROCEDURE procedure_name(parameters)
 VAR
     set_declarations
 BEGIN
