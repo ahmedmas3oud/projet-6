@@ -1,0 +1,27 @@
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+END
+def sum_of_distinct_elements(set1, set2):
+    return sum(set(set1) | set(set2))
+
+
+def dot_product(v1, v2):
+    return sum(x * y for x, y in zip(v1, v2))
+
+
+def are_orthogonal(v1, v2):
+    return dot_product(v1, v2) == 0
+
+
+# Exemples d'utilisation
+set1 = [3, 1, 7, 9]
+set2 = [2, 4, 1, 9, 3]
+print("Somme des éléments distincts:", sum_of_distinct_elements(set1, set2))
+
+v1 = [1, 2, 3]
+v2 = [-2, 1, 0]
+print("Produit scalaire:", dot_product(v1, v2))
+print("Les vecteurs sont orthogonaux ?", are_orthogonal(v1, v2))
